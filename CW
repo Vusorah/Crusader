@@ -1,4 +1,10 @@
--- Loading Notif
+-- Loading Notif and anti re execute
+
+if getgenv().executed then
+     return
+end
+
+getgenv().executed = true
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Crusader"; -- title of notification
