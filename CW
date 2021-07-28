@@ -173,8 +173,18 @@ end)
 -- extra cmds
 
 game:GetService("Players").LocalPlayer.Chatted:connect(function(msg) 
-if (string.lower(msg) == "/e rj") then
+if (string.lower(msg) == "!rj") then
 game:GetService('TeleportService'):Teleport(game.PlaceId)
 
+end
+end)
+
+game:GetService("Players").LocalPlayer.Chatted:connect(function(msg) 
+if (string.lower(msg) == "!down") then
+for i = 1,10 do
+local downed = 10
+local Event = game:GetService("ReplicatedStorage").Communication.Events.TakeFallDamage
+Event:FireServer(downed)
+end
 end
 end)
