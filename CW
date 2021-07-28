@@ -78,7 +78,7 @@ Button1.TextSize = 20.000
 Button1.MouseButton1Down:connect(function()
 game:GetService("Players").LocalPlayer.SessionData.Stamina.Changed:Connect(function()
 if game:GetService("Players").LocalPlayer.SessionData.Stamina.Value <= 149 then
-game:GetService("Players").LocalPlayer.SessionData.Stamina.Value = 150
+game:GetService("Players").LocalPlayer.SessionData.Stamina.Value = 30
 end
 end)
 
