@@ -1,0 +1,14 @@
+if game.PlaceId == 4282985734 or game.PlaceId == 4282985734 then
+    print("Remote Bypass injected for Combat Warriors [TESTING]")
+else
+    return
+end
+
+local oldNewIndex
+
+oldNewIndex = hookmetamethod(game, "__newindex", function(table, index, key)
+    if tostring(index) == "Name" and key == "" then
+        return
+    end
+    return oldNewIndex(table, index, key)
+end)
