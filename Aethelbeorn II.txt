@@ -1,0 +1,10 @@
+for i=100, 1000 do
+local A_1 = -1
+local Event = game:GetService("ReplicatedStorage").Remotes.Ragdoll
+Event:FireServer(A_1)
+end
+
+local voksr = -math.huge
+local dxp = Vector3.new(0)
+local Event = game:GetService("ReplicatedStorage").Remotes.Fall
+Event:InvokeServer(voksr, dxp)
