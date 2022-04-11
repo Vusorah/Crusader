@@ -10,7 +10,7 @@ local inject = Instance.new("TextButton")
 local close = Instance.new("TextButton")
 
 --Properties:
-
+syn.protect_gui(extreme)
 extreme.Name = "extreme"
 extreme.Parent = game.CoreGui
 extreme.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
