@@ -1,0 +1,56 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local extreme = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local inject = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+
+--Properties:
+
+extreme.Name = "extreme"
+extreme.Parent = game.CoreGui
+extreme.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = extreme
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.163705587, 0, 0.183639392, 0)
+Frame.Size = UDim2.new(0, 366, 0, 279)
+Frame.Active = true
+Frame.Draggable = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Size = UDim2.new(0, 366, 0, 279)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9343187168"
+
+inject.Name = "inject"
+inject.Parent = ImageLabel
+inject.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+inject.BackgroundTransparency = 1.000
+inject.Position = UDim2.new(0.696721315, 0, 0.892473102, 0)
+inject.Size = UDim2.new(0, 100, 0, 18)
+inject.Font = Enum.Font.SourceSans
+inject.TextColor3 = Color3.fromRGB(0, 0, 0)
+inject.TextSize = 14.000
+inject.TextTransparency = 1.000
+inject.MouseButton1Down:connect(function()
+--script here
+end)
+
+close.Name = "close"
+close.Parent = ImageLabel
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.885245919, 0, 0, 0)
+close.Size = UDim2.new(0, 42, 0, 25)
+close.Font = Enum.Font.SourceSans
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 14.000
+close.TextTransparency = 1.000
+close.MouseButton1Down:connect(function()
+Frame.destroy(true)
+end)
