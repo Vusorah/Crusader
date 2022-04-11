@@ -25,7 +25,7 @@ Frame.Draggable = true
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Size = UDim2.new(0, 366, 0, 279)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=9343187168"
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9343364002"
 
 inject.Name = "inject"
 inject.Parent = ImageLabel
