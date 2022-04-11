@@ -8,6 +8,7 @@ local Frame = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
 local inject = Instance.new("TextButton")
 local close = Instance.new("TextButton")
+local dxx = Instance.new("TextButton")
 
 --Properties:
 syn.protect_gui(extreme)
@@ -38,7 +39,8 @@ inject.TextColor3 = Color3.fromRGB(0, 0, 0)
 inject.TextSize = 14.000
 inject.TextTransparency = 1.000
 inject.MouseButton1Down:connect(function()
---script here
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vusorah/Crusader/main/KiriotLIBedit"))()
+ESP:Toggle(true)
 end)
 
 close.Name = "close"
@@ -53,4 +55,18 @@ close.TextSize = 14.000
 close.TextTransparency = 1.000
 close.MouseButton1Down:connect(function()
 extreme:Destroy()
+end)
+
+dxx.Name = "dxx"
+dxx.Parent = ImageLabel
+dxx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dxx.BackgroundTransparency = 1.000
+dxx.Position = UDim2.new(0.368852466, 0, 0.892473102, 0)
+dxx.Size = UDim2.new(0, 93, 0, 18)
+dxx.Font = Enum.Font.SourceSans
+dxx.TextColor3 = Color3.fromRGB(0, 0, 0)
+dxx.TextSize = 14.000
+dxx.TextTransparency = 1.000
+close.MouseButton1Down:connect(function()
+ESP:Toggle(false)
 end)
