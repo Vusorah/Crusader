@@ -39,8 +39,7 @@ inject.TextColor3 = Color3.fromRGB(0, 0, 0)
 inject.TextSize = 14.000
 inject.TextTransparency = 1.000
 inject.MouseButton1Down:connect(function()
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vusorah/Crusader/main/KiriotLIBedit"))()
-ESP:Toggle(true)
+-- script
 end)
 
 close.Name = "close"
@@ -67,6 +66,6 @@ dxx.Font = Enum.Font.SourceSans
 dxx.TextColor3 = Color3.fromRGB(0, 0, 0)
 dxx.TextSize = 14.000
 dxx.TextTransparency = 1.000
-close.MouseButton1Down:connect(function()
-ESP:Toggle(false)
+dxx.MouseButton1Down:connect(function()
+-- script
 end)
